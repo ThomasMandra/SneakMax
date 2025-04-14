@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Intro Book";
+  src: url("./fonts/intro-book.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Intro Regular";
+  src: url("./fonts/intro_regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Intro Bold";
+  src: url("./fonts/intro_bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+:root {
+  --font-family: "Intro Book", sans-serif;
+  --second-family: "Intro Regular", sans-serif;
+  --third-family: "Intro Bold", sans-serif;
+
+  --bg: #484283;
+  --accent: #f14f4f;
+  --text: #444b58;
+  --small-text: #dbbba9;
+  --sec-bg: #fff4ee;
+  --gray: #b2b5bb;
+}
+
+#root {
+  margin: 0 auto;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+summary::marker {
+  display: none;
+}
+
+.checkBox {
+  position: relative;
+  appearance: none;
+  border: 1px solid var(--small-text);
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.checkBox:checked::after {
+  position: absolute;
+  content: url("./assets/utilsIcons/checkbox.svg");
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,41 @@
+.bcgBlue {
+  position: relative;
+  background-color: var(--bg);
+  color: #fff;
+  z-index: 4;
+}
+
+.bcgGray {
+  position: relative;
+  background-color: #f3f6f6;
+  color: var(--text);
+  z-index: 5;
+}
+
+.bcgBlackGray {
+  position: relative;
+  background-color: var(--text);
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.whiteSpace {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 950px) {
+  .whiteSpace {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 550px) {
+  .whiteSpace {
+    margin-bottom: 30px;
+  }
+}

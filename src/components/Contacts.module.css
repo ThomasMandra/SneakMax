@@ -1,0 +1,101 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.contactsTooltip {
+  width: 430px;
+}
+
+.contactsInfo h3 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text);
+  margin-bottom: 60px;
+}
+
+.contactsItem h4 {
+  line-height: 140%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.contactsItem address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 40px 0;
+}
+
+.contactsItem address a {
+  font-family: var(--second-family);
+  font-size: 30px;
+  line-height: 140%;
+  color: var(--text);
+}
+
+.contactsItem address span {
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--text);
+}
+
+.contactsItemHelp {
+  display: flex;
+  column-gap: 10px;
+}
+
+.contactsItemHelp div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 100%;
+  fill: #fff;
+  box-shadow: 2px 4px 10px 0 rgba(0, 13, 84, 0.2);
+  width: 20px;
+  height: 20px;
+}
+
+.contactsIcons {
+  display: flex;
+  column-gap: 20px;
+}
+
+.map {
+  width: 680px;
+  height: 500px;
+}
+
+@media (max-width: 700px) {
+  .contacts {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .map {
+    width: 480px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .map {
+    width: 100%;
+    height: 200px;
+  }
+
+  .contactsTooltip {
+    width: 230px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contactsTooltip {
+    position: relative;
+    left: -50%;
+  }
+}

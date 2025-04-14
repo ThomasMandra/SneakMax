@@ -1,0 +1,39 @@
+.questBlock {
+  display: flex;
+  flex-direction: column;
+}
+.questBlock div {
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+}
+.questBlock h3 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text);
+  margin-bottom: 40px;
+}
+
+.questBlockItem {
+  border-bottom: 1px solid #242424;
+  padding: 30px 0;
+}
+
+.questBlockItemTopLine {
+  border-top: 1px solid #242424;
+}
+
+.questBlockItem summary {
+  font-family: var(--second-family);
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  color: #242424;
+}
+.questBlockItem p {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(36, 36, 36, 0.5);
+}

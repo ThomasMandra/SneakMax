@@ -1,0 +1,13 @@
+.catalogTitle {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+  .catalog {
+    flex-direction: column;
+  }
+}

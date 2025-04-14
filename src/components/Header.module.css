@@ -1,0 +1,69 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 528px;
+  color: #fff;
+}
+
+.headerInfo {
+  margin-top: 109px;
+  max-width: 580px;
+}
+
+.headerInfoLink {
+  display: block;
+  color: #fff;
+  padding: 22px 47px;
+}
+
+.headerInfo h1 {
+  position: relative;
+  font-family: var(--second-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 11px;
+}
+
+.headerInfo p {
+  line-height: 140%;
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+
+.headerLogoBcg {
+  position: absolute;
+
+  top: 60%;
+  left: 50%;
+  /* коррекция положения элемента */
+  transform: translate(-50%, -50%);
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 15vw;
+  color: rgba(255, 255, 255, 0.12);
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  z-index: -10;
+}
+
+@media (max-width: 750px) {
+  .headerInfo {
+    margin-top: 70px;
+  }
+
+  .headerInfo h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 450px) {
+  .headerInfo {
+    margin-top: 30px;
+  }
+}

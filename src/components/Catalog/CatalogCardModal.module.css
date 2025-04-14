@@ -1,0 +1,203 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  animation-name: appear;
+  animation-duration: 300ms;
+}
+
+.modalDialog {
+  width: 100%;
+  max-width: 840px;
+  background: white;
+  position: relative;
+  margin: 0 20px;
+  max-height: calc(100vh - 40px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+.modalBody {
+  overflow: auto;
+}
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 40px;
+}
+
+.modalTitle {
+  margin: 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modalContentHeader {
+  display: flex;
+
+  column-gap: 20px;
+}
+
+.modalContentEstimate {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.modalContentEstimate h4 {
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--text);
+}
+
+.modalContentEstimate p {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.modalContentArticle {
+  display: flex;
+  column-gap: 50px;
+  margin-bottom: 40px;
+}
+
+.modalContentArticle p {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.modalContentArticle span {
+  color: var(--text);
+}
+
+.modalContentSizeList {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.modalButtonSize {
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  background: transparent;
+}
+
+.modalButtonSize input[type="radio"]:checked + label {
+  color: aliceblue !important;
+  background: #000000 !important;
+}
+
+.modalButtonSize label {
+  padding: 10px 26px;
+  transition-duration: 0.3s;
+}
+
+@media (hover: hover) {
+  .modalButtonSize:hover {
+    background: #b3aeae;
+  }
+}
+
+.modalContentPrice {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text);
+  margin-bottom: 30px;
+}
+
+.modalContentPositive {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+  color: var(--gray);
+}
+
+.modalContentPositive li {
+  padding-left: 19px;
+  position: relative;
+}
+
+.modalContentPositive li::before {
+  content: url("../../assets/utilsIcons/positiveList.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 12px;
+}
+
+.modalContentMain {
+}
+
+.modalContentDescription h5 {
+  font-size: 24px;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.modalContentDescription p {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+}
+
+.modalContentProperty p {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.modalContentProperty h5 {
+  font-size: 24px;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.modalContentImageMain {
+  width: 320px;
+  height: 320px;
+}
+
+.modalContentImageList {
+  display: flex;
+  column-gap: 20px;
+  width: 320px;
+  overflow-x: auto;
+}
+
+.modalContentImageList li img {
+  cursor: pointer;
+  height: 70px;
+  width: 75px;
+}

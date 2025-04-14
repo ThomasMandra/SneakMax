@@ -1,0 +1,100 @@
+.feedBack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+  row-gap: 20px;
+}
+
+.feedBackForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--bg);
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.feedBackForm h3 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedBackForm p {
+  width: 260px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feedBackForm form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 10px;
+}
+
+.feedBackForm input {
+  border-radius: 4px;
+  padding: 18.8px 20px;
+}
+
+.feedBackForm input::placeholder {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--gray);
+}
+
+.feedBackImage {
+  display: flex;
+  column-gap: 18px;
+  align-items: end;
+}
+
+.feedBackImage div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.feedBackImage div:first-child {
+  row-gap: 10px;
+}
+
+.feedBackImage div:last-child {
+  row-gap: 25px;
+}
+
+@media (max-width: 1150px) {
+  .feedBackForm {
+    max-width: 680px;
+    order: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .feedBackImage img {
+    width: 155px;
+  }
+
+  .feedBackImage div img {
+    width: 73px;
+  }
+}
+
+@media (max-width: 350px) {
+  .feedBackImage img {
+    width: 135px;
+  }
+
+  .feedBackImage div img {
+    width: 53px;
+  }
+}

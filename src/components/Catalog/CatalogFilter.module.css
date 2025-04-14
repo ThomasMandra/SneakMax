@@ -1,0 +1,105 @@
+.catalogFilter {
+  min-width: 280px;
+  /* height: 610px; */
+  height: 400px;
+  border: 1px solid var(--sec-bg);
+  border-radius: 4px;
+  background: var(--sec-bg);
+}
+
+.filterName {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.form {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.form legend {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--text);
+  height: 48px;
+}
+
+.checkBoxForm {
+  display: flex;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  column-gap: 5px;
+  color: var(--text);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkBoxForm input,
+.checkBoxForm label {
+  cursor: pointer;
+}
+
+.checkBoxForm div {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.sizeBlock button {
+  border: 0.29px solid var(--small-text);
+  background: var(--sec-bg);
+  width: 79px;
+  height: 57px;
+  transition-duration: 0.2s;
+}
+
+.sizeBlock button:hover {
+  background: var(--small-text);
+}
+
+.resetFilter {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--sec-bg);
+  margin: 20px auto;
+}
+.resetFilter:hover {
+  text-decoration: underline;
+}
+
+.priceSlider {
+  border: 1px solid var(--sec-bg);
+  width: 4px;
+  background: var(--text);
+  transform: rotate(-90deg);
+}
+
+.handleColor {
+  height: 7px;
+  background-color: black;
+  color: #040405;
+}
+
+.activeButtonFilter {
+  background: #633f3f !important;
+  color: aqua;
+}
+
+@media (max-width: 700px) {
+  .catalogFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,142 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  animation-name: appear;
+  animation-duration: 300ms;
+}
+
+.modalDialog {
+  width: 100%;
+  max-width: 550px;
+  background: white;
+  position: relative;
+  margin: 0 20px;
+  max-height: calc(100vh - 10px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.modalHeader {
+  justify-content: space-between;
+}
+.modalFooter {
+  padding: 40px;
+}
+.modalHeaderClose {
+  display: none;
+}
+
+.modalFooterForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.modalFooterForm input {
+  height: 60px;
+  width: 100%;
+  border-radius: 4px;
+  background: #f6f6f6;
+  padding: 19px 20px;
+}
+
+.modalFooterForm input::placeholder {
+  line-height: 140%;
+  color: var(--gray);
+}
+
+.modalBody {
+  padding: 0 40px;
+  overflow: auto;
+}
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.modalContentList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.modalTitle {
+  margin: 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .modalHeaderClose {
+    display: block;
+    position: absolute;
+    top: -5px;
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(45deg);
+  }
+
+  .modalTitle {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .modalDialog {
+    margin: 0;
+  }
+  .modalHeader {
+    padding: 20px;
+  }
+
+  .modalBody {
+    padding: 0 5px;
+  }
+
+  .modalFooter {
+    padding: 20px;
+  }
+}

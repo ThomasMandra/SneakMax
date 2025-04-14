@@ -1,0 +1,54 @@
+.ourTeam {
+  padding: 60px 0;
+}
+
+.ourTeam::before {
+  content: url("../assets/team/muTeamFigure.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -3;
+}
+
+.ourTeam h3 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.ourTeamList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.ourTeamItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.ourTeamItem h4 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.ourTeamItem p {
+  font-size: 16px;
+}
+
+.ourTeamItem img {
+  border-radius: 4px;
+}
+
+@media (max-width: 550px) {
+  .ourTeamItem img {
+    width: 320px;
+    height: auto;
+  }
+}

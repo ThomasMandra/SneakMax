@@ -1,0 +1,42 @@
+.cardBusketModal {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.cardBusketModalHover:hover {
+  background: rgba(204, 217, 242, 0.2);
+}
+
+.cardBusketModalInfo h4 {
+  line-height: 143%;
+  margin-bottom: 7px;
+}
+
+.cardBusketModalInfo p {
+  margin-bottom: 5px;
+}
+
+.cardBusketModalInfo span {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cardBusketModal button {
+  margin-left: auto;
+  cursor: pointer;
+  background-color: transparent;
+  height: 20px;
+}
+
+.cardBusketModal button:hover {
+  border-bottom: none !important;
+}
+
+.basketEmpty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}

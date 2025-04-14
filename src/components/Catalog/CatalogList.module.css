@@ -1,0 +1,82 @@
+.catalogList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.catalogCard {
+  position: relative;
+}
+
+.catalogCard:hover .catalogImg {
+  opacity: 0.6;
+}
+
+.catalogCard:hover .cardClick {
+  display: flex;
+  column-gap: 40px;
+}
+
+.cardClick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  fill: var(--text);
+  transition: 0.3s;
+}
+
+.cardClick button {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: var(--text);
+}
+
+.cardClick button:first-child {
+  background-image: url("../../assets/utilsIcons/addToBasketIcons.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cardClick button:last-child {
+  background-image: url("../../assets/utilsIcons/lookToProductIcon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalogImgBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+}
+
+.catalogImg {
+  border-radius: 4px;
+  width: 280px;
+  height: auto;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+.catalogName {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 280px;
+  color: var(--text);
+}
+
+.catalogPrice {
+  font-family: var(--second-family);
+  font-size: 20px;
+  color: var(--text);
+}
