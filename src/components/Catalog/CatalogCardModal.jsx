@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 function CatalogCardModal({ visible = false, onClose, idElement }) {
   const [isImageUrl, setImageUrl] = useState(
-    "../../../public/img/feedBackImg-1.jpg"
+    "https://avatars.mds.yandex.net/i?id=7b4d9498bebe06d443b6d0978c047e8a_l-5354312-images-thumbs&n=13"
   );
   const product = useSelector((state) => state.product);
 
@@ -45,13 +45,18 @@ function CatalogCardModal({ visible = false, onClose, idElement }) {
       <div className={styles.modalDialog} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalBody}>
           <div className={styles.modalContent}>
+            <span className={`${styles.modalHeaderClose}`} onClick={onClose}>
+              +
+            </span>
             <div className={styles.modalContentHeader}>
               <div>
-                <img
-                  className={styles.modalContentImageMain}
-                  src={isImageUrl}
-                  alt=""
-                />
+                <div className={styles.modalContentImageMainContainer}>
+                  <img
+                    className={styles.modalContentImageMain}
+                    src={isImageUrl}
+                    alt=""
+                  />
+                </div>
                 <ul className={styles.modalContentImageList}>
                   <li>
                     <img src={itemModal.url} onClick={imageHandler} alt="" />
