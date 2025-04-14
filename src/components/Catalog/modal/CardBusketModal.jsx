@@ -37,7 +37,7 @@ function CardBusketModal({ padding = "10px 20px" }) {
               <img
                 data-elid={el.id}
                 onClick={deleteProduct}
-                src="../../../../public/img/utilsIcons/busketDeleteIcon.svg"
+                src="img/utilsIcons/busketDeleteIcon.svg"
                 alt=""
               />
             </button>
