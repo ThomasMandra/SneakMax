@@ -17,7 +17,7 @@ function BurgerMenu({ visible, onClose, setBurgerMenu }) {
   if (!visible)
     return (
       <button className={styles.burgerNavButton} onClick={burgerMenuHandle}>
-        <img src="../../public/img/utilsIcons/burgerMenu.svg" width={50} />
+        <img src="img/utilsIcons/burgerMenu.svg" width={50} />
       </button>
     );
 

@@ -91,16 +91,11 @@ function Contacts() {
         </ul>
         <div className={styles.contactsIcons}>
           <Link to={"./"}>
-            <img
-              src="../../public/img/VK.png"
-              alt="VK"
-              width="44"
-              height="44"
-            />
+            <img src="img/VK.png" alt="VK" width="44" height="44" />
           </Link>
           <Link to={"./"}>
             <img
-              src="../../public/img/Instagram.png"
+              src="img/Instagram.png"
               alt="Instagram"
               width="44"
               height="44"

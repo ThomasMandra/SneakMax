@@ -16,33 +16,33 @@ function FeedBack() {
       <div className={styles.feedBackImage}>
         <div>
           <img
-            src="../../public/img/feedBackImg-2.jpg"
+            src="img/feedBackImg-2.jpg"
             alt=""
             max-width={157}
             max-height={160}
           />
           <img
-            src="../../public/img/feedBackImg-3.jpg"
+            src="img/feedBackImg-3.jpg"
             alt=""
             max-width={157}
             max-height={160}
           />
         </div>
         <img
-          src="../../public/img/feedBackImg-1.jpg"
+          src="img/feedBackImg-1.jpg"
           alt=""
           max-width={330}
           max-height={336}
         />
         <div>
           <img
-            src="../../public/img/feedBackImg-4.jpg"
+            src="img/feedBackImg-4.jpg"
             alt=""
             max-width={157}
             max-height={160}
           />
           <img
-            src="../../public/img/feedBackImg-5.jpg"
+            src="img/feedBackImg-5.jpg"
             alt=""
             max-width={157}
             max-height={160}
